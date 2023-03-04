@@ -1,12 +1,15 @@
 {
   "name": "builder-webpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
     "eslint-fix": "eslint ./lib --fix",
-    "test": "node ./test/smock/index.js"
+    "test": "node ./test/smock/index.js",
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch"
   },
   "author": "",
   "license": "ISC",
